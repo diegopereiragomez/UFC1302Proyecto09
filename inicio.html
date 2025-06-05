@@ -11,16 +11,17 @@
 </head>
 
 <body>
-    <header class="hero" >
+    <header class="hero" id="inicio">
         <nav class="container">
-            <div >
+            <div class="nav_logo">
                 <h2 class="nav_title">Titulo</h2>
             </div>
-            <ul class="head_link head_link-menu">
-                <li class="nav_item"><a href="./inicio.html" class="nav_link">Inicio</a></li>
-                <li class="nav_item"><a href="./acercade.html" class="nav_link">Acerca de</a></li>
-                <li class="nav_item"><a href="./contacto.html" class="nav_link">Contacto</a></li>
-                <li class="nav_item"><a href="./blog.html" class="nav_link">Blog</a></li>
+            <ul class="head_link">
+                <!-- <ul class="nav_link nav_link-menu"></ul> -->
+                <li class="nav_item"><a href="#" class="nav_link">Inicio</a></li>
+                <li class="nav_item"><a href="#acercade" class="nav_link">Acerca de</a></li>
+                <li class="nav_item"><a href="#contacto" class="nav_link">Contacto</a></li>
+                <li class="nav_item"><a href="#" class="nav_link">Blog</a></li>
                 <img src="./img/close.svg" class="nav_close" alt="icono cierre menu">
             </ul>
             <div class="nav_menu">
@@ -32,12 +33,11 @@
             <p class="hero_parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint nam tenetur, eum
                 deserunt voluptatibus debitis tempore voluptatum adipisci ad eius, distinctio similique cum. Aperiam
                 neque dolorum natus et ea repellendus.</p>
-            <a href="#" class="cta">Comenzar ahora</a>
         </section>
     </header>
     <main>
         </section>
-        <section class="container about" >
+        <section class="container about" id="acercade">
             <h2 class="about subtitle"> Que aprendera en este curso</h2>
             <p class="about_parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis earum voluptatem
                 nihil, itaque officiis veritatis!</p>
@@ -45,7 +45,7 @@
                 <article class="about_icons">
                     <img class="about_img" src="./img/shapes.svg" alt="icono de css">
                     <!-- <img class="about_icon" src="./img/shapes.svg" alt="icono de css"> -->
-                    <h3 class="about_title">CSS Layouts</h3>
+                    <h3 class="about_title" >CSS Layouts</h3>
                     <p class="about_parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci enim
                         nam eaque necessitatibus tempore nesciunt.</p>
                 </article>
@@ -92,9 +92,8 @@
                     </div>
                     <a href="#grid.html" class="price_cta">inicia ahora</a>
                 </div>
-                <!-- <div class="price_element_best"> -->
-                    <div class="price_element price_element_best">
-                    <p class="price_name ">Grid</p>
+                <div class="price_element">
+                    <p class="price_name">Grid</p>
                     <h3 class="price_price">60 euro/mes</h3>
                     <div class="price_items">
                         <p class="price_features">grit</p>
@@ -118,10 +117,9 @@
         <section class="testimony">
             <div class="container testimony_container">
                 <img src="./img/leftarrow.svg" alt="flcha hacia abajo" class="testimony_arrow" id="antes">
-                <section class="testimony_body testimony_body-show" data-id="1">
+                <section class="testimony_body">
                     <div class="testimony_text">
-                        <h2 class="subtitle">Mi nombre es John Doe <span class="testimony_course">Estudiante de
-                                CSS</span>
+                        <h2 class="subtitle">Mi nombre es John Doe <span class="testimony_course">Estudiante de CSS</span>
                         </h2>
                         <p class="testimony_review">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
                             voluptatem mollitia rerum, numquam quasi ipsum quae sit, odio tempora, consectetur quos
@@ -131,7 +129,7 @@
                         <img src="./img/face.jpg" alt="foto de alumno" class="testimony_img">
                     </figure>
                 </section>
-                <section class="testimony_body " data-id="2">
+                <section class="testimony_body">
                     <div class="testimony_text">
                         <h2 class="subtitle">Mi nombre es John Wick<span class="testimony_course">Estudiante de
                                 UIC/UCS</span></h2>
@@ -143,7 +141,7 @@
                         <img src="./img/face2.jpg" alt="foto de alumno" class="testimony_img">
                     </figure>
                 </section>
-                <section class="testimony_body " data-id="3">
+                <section class="testimony_body">
                     <div class="testimony_text">
                         <h2 class="subtitle"> Mi nombre es Jane Doe <span class="testimony_course">Estudiante de
                                 Fromet</span></h2>
@@ -155,7 +153,7 @@
                         <img src="./img/face3.jpg" alt="foto de alumno" class="testimony_img">
                     </figure>
                 </section>
-                <section class="testimony_body " data-id="4">
+                <section class="testimony_body">
                     <div class="testimony_text">
                         <h2 class="subtitle"> Mi nombre es Juan Nadie <span class="testimony_course">Estudiante de
                                 CSS</span>
@@ -228,13 +226,13 @@
             <nav class="nav_footer">
                 <h2 class="footer_title">Curso CSS</h2>
                 <ul class="head_link nav-link_footer">
-                    <li class="nav_item"><a href="./inicio.html" class="nav_link">Inicio</a></li>
-                    <li class="nav_item"><a href="./acercade.html" class="nav_link">Acerca de</a></li>
-                    <li class="nav_item"><a href="./contacto.html" class="nav_link">Contacto</a></li>
-                    <li class="nav_item"><a href="./blog.html" class="nav_link">Blog</a></li>
+                    <li class="nav_item"><a href="#inicio" class="nav_link">Inicio</a></li>
+                    <li class="nav_item"><a href="#acercade" class="nav_link">Acerca de</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">Contacto</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">Blog</a></li>
                 </ul>
             </nav>
-            <form class="footer_form" action="" method="post" >
+            <form class="footer_form" action="" method="post" id="contacto">
                 <h2 class="footer_newsletter">Suscribete a newsletter</h2>
                 <div class="footer_inputs">
                     <input type="text" class="footer_input" name="e-mail" placeholder="e-mail" required>
