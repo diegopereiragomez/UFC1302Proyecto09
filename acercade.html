@@ -16,12 +16,11 @@
             <div class="nav_logo">
                 <h2 class="nav_title">Titulo</h2>
             </div>
-            <ul class="head_link">
-                <!-- <ul class="nav_link nav_link-menu"></ul> -->
-                <li class="nav_item"><a href="#" class="nav_link">Inicio</a></li>
-                <li class="nav_item"><a href="#acercade" class="nav_link">Acerca de</a></li>
-                <li class="nav_item"><a href="#contacto" class="nav_link">Contacto</a></li>
-                <li class="nav_item"><a href="#" class="nav_link">Blog</a></li>
+            <ul class="head_link head_link-menu">
+                <li class="nav_item"><a href="./inicio.html" class="nav_link">Inicio</a></li>
+                <li class="nav_item"><a href="./acercade.html" class="nav_link">Acerca de</a></li>
+                <li class="nav_item"><a href="./contacto.html" class="nav_link">Contacto</a></li>
+                <li class="nav_item"><a href="./blog.html" class="nav_link">Blog</a></li>
                 <img src="./img/close.svg" class="nav_close" alt="icono cierre menu">
             </ul>
             <div class="nav_menu">
@@ -38,7 +37,7 @@
     <main>
         </section>
         <section class="container about" id="acercade">
-            <h2 class="about subtitle"> Que aprendera en este curso</h2>
+            <h2 class="about subtitle">Quienes somos</h2>
             <p class="about_parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis earum voluptatem
                 nihil, itaque officiis veritatis!</p>
             <div class="about_main">
@@ -117,9 +116,10 @@
         <section class="testimony">
             <div class="container testimony_container">
                 <img src="./img/leftarrow.svg" alt="flcha hacia abajo" class="testimony_arrow" id="antes">
-                <section class="testimony_body">
+                <section class="testimony_body testimony_body-show" data-id="1">
                     <div class="testimony_text">
-                        <h2 class="subtitle">Mi nombre es John Doe <span class="testimony_course">Estudiante de CSS</span>
+                        <h2 class="subtitle">Helena Nito del Monte <span class="testimony_course">Profesora de
+                                CSS</span>
                         </h2>
                         <p class="testimony_review">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
                             voluptatem mollitia rerum, numquam quasi ipsum quae sit, odio tempora, consectetur quos
@@ -129,10 +129,10 @@
                         <img src="./img/face.jpg" alt="foto de alumno" class="testimony_img">
                     </figure>
                 </section>
-                <section class="testimony_body">
+                <section class="testimony_body " data-id="2">
                     <div class="testimony_text">
-                        <h2 class="subtitle">Mi nombre es John Wick<span class="testimony_course">Estudiante de
-                                UIC/UCS</span></h2>
+                        <h2 class="subtitle">Dolores Fuertes<span class="testimony_course">Profesora de
+                                Php</span></h2>
                         <p class="testimony_review">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
                             doloremque perferendis est facere laborum, necessitatibus sed excepturi quasi dolorum dicta
                             blanditiis distinctio quis magni corporis ipsam dolores reiciendis sequi. Repellendus.</p>
@@ -141,10 +141,10 @@
                         <img src="./img/face2.jpg" alt="foto de alumno" class="testimony_img">
                     </figure>
                 </section>
-                <section class="testimony_body">
+                <section class="testimony_body " data-id="3">
                     <div class="testimony_text">
-                        <h2 class="subtitle"> Mi nombre es Jane Doe <span class="testimony_course">Estudiante de
-                                Fromet</span></h2>
+                        <h2 class="subtitle">Aitor Tilla <span class="testimony_course">Profesor 
+                                JavaScript</span></h2>
                         <p class="testimony_review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam modi
                             fugiat at numquam debitis omnis vero porro, eius ut quam sit dignissimos. Tenetur nam vel
                             nostrum numquam at?</p>
@@ -153,10 +153,10 @@
                         <img src="./img/face3.jpg" alt="foto de alumno" class="testimony_img">
                     </figure>
                 </section>
-                <section class="testimony_body">
+                <section class="testimony_body " data-id="4">
                     <div class="testimony_text">
-                        <h2 class="subtitle"> Mi nombre es Juan Nadie <span class="testimony_course">Estudiante de
-                                CSS</span>
+                        <h2 class="subtitle">Armando Liosadis Tancia<span class="testimony_course">Profesor de
+                                HTML</span>
                         </h2>
                         <p class="testimony_review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam
                             molestias quas illo. Fugiat, recusandae explicabo animi magnam, beatae laboriosam deserunt,
@@ -222,24 +222,6 @@
         </section>
     </main>
     <footer>
-        <section class="container footer_container">
-            <nav class="nav_footer">
-                <h2 class="footer_title">Curso CSS</h2>
-                <ul class="head_link nav-link_footer">
-                    <li class="nav_item"><a href="#inicio" class="nav_link">Inicio</a></li>
-                    <li class="nav_item"><a href="#acercade" class="nav_link">Acerca de</a></li>
-                    <li class="nav_item"><a href="#" class="nav_link">Contacto</a></li>
-                    <li class="nav_item"><a href="#" class="nav_link">Blog</a></li>
-                </ul>
-            </nav>
-            <form class="footer_form" action="" method="post" id="contacto">
-                <h2 class="footer_newsletter">Suscribete a newsletter</h2>
-                <div class="footer_inputs">
-                    <input type="text" class="footer_input" name="e-mail" placeholder="e-mail" required>
-                    <input type="submit" class="footer_submit" value="Registrate">
-                </div>
-            </form>
-        </section>
         <section class="container footer_copy">
             <div class="footer_social">
                 <a href="#" class="footer_icons"><img src="./img/twitter.svg" alt="icono twiter" class="footer_img"></a>
